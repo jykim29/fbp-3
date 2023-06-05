@@ -1,0 +1,226 @@
+body {
+  position: relative;
+  background-color: rgb(236, 227, 204);
+  width: 98vw;
+  min-width: 1152px;
+  height: 750px;
+  background-image: url(../images/bgimage.jpg);
+  background-size: contain;
+}
+
+/* Grid Layout Styles */
+.container {
+  width: 1152px;
+  height: 640px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-desktop.svg);
+  background-size: contain;
+  box-shadow: 5px 5px 10px grey;
+  display: grid;
+  grid-template-rows: 150px 395px 95px;
+  grid-template-columns: 608px 544px;
+  grid-template-areas: 
+  "logo logo"
+  "picture body"
+  "contact contact";
+}
+.item-1 {
+  grid-area: logo;
+}
+.item-2 {
+  grid-area: picture;
+}
+.item-3 {
+  grid-area: body;
+}
+.item-4 {
+  grid-area: contact;
+}
+
+/* Logo Styles */
+.item {
+  padding-left: 55px;
+}
+.item-1 img {
+  width: 180px;
+  margin-top: 40px;
+}
+
+/* Mockups Image Styles */
+.item-2 img {
+  width: 550px;
+}
+
+/* Contents Styles */
+.item-3 div {
+  width: 460px;
+}
+.item-3 div h1 {
+  width: 400px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+.item-3 div p {
+  color: hsl(256, 48%, 86%);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* Register Button Styles */
+.btn {
+  width: 180px;
+  height: 50px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 90px;
+  font-family: 'Poppins', sans-serif;
+  color: hsl(257, 41%, 49%);
+  box-shadow: 5px 5px 10px hsl(257, 40%, 32%);
+}
+.btn:hover {
+  color: white;
+  background-color: rgb(232, 130, 232);
+}
+
+/* SNS Button Styles */
+.item-4 div {
+  position: relative;
+  float: right;
+  margin-right: 45px;
+}
+.sns-btn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0px 5px;
+}
+#facebook {
+  background: url('../images/facebook.png');
+  background-size: contain;
+}
+#facebook:hover {
+  background: url('../images/facebook-hover.png');
+  background-size: contain;
+  cursor: pointer;
+}
+#twitter {
+  background: url('../images/twitter.png');
+  background-size: contain;
+}
+#twitter:hover {
+  background: url('../images/twitter-hover.png');
+  background-size: contain;
+  cursor: pointer;
+}
+#instagram {
+  background: url('../images/instagram.png');
+  background-size: contain;
+}
+#instagram:hover {
+  background: url('../images/instagram-hover.png');
+  background-size: contain;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (max-width: 820px) {
+body {
+    width: 100%;
+    min-width: 375px;
+    height: 930px;
+    margin: 0;
+    overflow-x: hidden;
+    background-size: cover;
+  }
+
+  /* Grid Layout Styles */
+  .container {
+    width: 375px;
+    height: 820px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 10px grey;
+    display: grid;
+    grid-template-rows: 130px 250px 350px 90px;
+    grid-template-columns: 375px;
+    grid-template-areas: 
+    "logo"
+    "picture" 
+    "body"
+    "contact";
+  }
+
+  /* Logo Styles */
+.item {
+  padding-left: 40px;
+}
+.item-1 img {
+  width: 130px;
+  margin-top: 35px;
+}
+
+/* Mockups Image Styles */
+.item-2 img {
+  width: 300px;
+}
+
+/* Contents Styles */
+.item-3 div {
+  width: 300px;
+  text-align: center;
+}
+.item-3 div h1 {
+  width: 280px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 24px;
+}
+.item-3 div p {
+  color: hsl(256, 48%, 86%);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* Register Button Styles */
+.btn {
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+/* SNS Button Styles */
+.item-4 div {
+  position: relative;
+  float: none;
+  left: 25%;
+}
+.sns-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0px 5px;
+}
+
+}
